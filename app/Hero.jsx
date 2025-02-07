@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Left Side - Text */}
         <div className="space-y-6 w-full sm:w-1/2">
           <h1 className="text-6xl sm:text-7xl mb-3 font-medium pixel-font text-harvest-gold">
-            MemeGoldc:\Users\ahsan\Videos\video_2025-02-08_03-55-51000.gif
+            MemeGold
           </h1>
           <h2 className="text-3xl sm:text-5xl">The Ultimate Gold Meme Token</h2>
           <p className="text-lg text-maize">
