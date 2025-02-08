@@ -2,8 +2,7 @@ import About from "./About";
 import BackgroundMusic from "./BackgroundMusic";
 import Footer from "./Footer";
 import Header from "./Header";
-import Hero from "./Hero";
-import Teams from "./Teams";
+import Hero2 from "./Hero2";
 import Tokenomics from "./Tokenomics";
 
 const HomePage = () => {
@@ -11,11 +10,12 @@ const HomePage = () => {
     <>
       <BackgroundMusic />
       <Header />
-      <Hero />
+      {/* <Hero /> */}
+      <Hero2 />
       <hr className="border-yellow-800" />
       <About />
       <hr className="border-yellow-800" />
-      <Teams />
+      {/* <Teams /> */}
       <hr className="border-yellow-800" />
       <Tokenomics />
       <Footer />
