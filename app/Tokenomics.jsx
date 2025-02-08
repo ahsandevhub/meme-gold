@@ -45,7 +45,7 @@ const tokenomicsData = [
 
 const Tokenomics = () => {
   return (
-    <section className="relative py-16 sm:py-[150px] bg-gradient-to-br from-english-violet to-raw-umber text-black overflow-hidden">
+    <section className="relative py-16 sm:py-[100px] bg-gradient-to-br from-english-violet to-raw-umber text-black overflow-hidden">
       <div id="tokenomics" className="absolute -top-12"></div>
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-[url('/treasure.avif')] bg-cover bg-center opacity-10" />
@@ -53,7 +53,7 @@ const Tokenomics = () => {
       {/* Content Container */}
       <div className="relative max-w-3xl mx-auto text-center px-6">
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold sm:mb-14 text-white mb-8 uppercase"
+          className="text-3xl sm:text-4xl font-bold sm:mb-14 text-yellow-400 mb-8 uppercase"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

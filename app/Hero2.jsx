@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+
+const contractAddress = "contract address here...";
 
 const teamMembers = [
   {
@@ -31,6 +34,14 @@ const teamMembers = [
 ];
 
 const Hero2 = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(contractAddress);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section
       className="relative py-12 text-white bg-cover bg-center"
@@ -48,6 +59,19 @@ const Hero2 = () => {
             alt="GoldMeme Banner"
             className="w-full rounded-lg shadow-lg border-2 border-sky-500"
           />
+        </div>
+
+        {/* Contract Address with Copy Button */}
+        <div className="mb-6 bg-white/10 p-4 rounded-lg border flex flex-col sm:flex-row items-center justify-between space-y-3 sm:space-y-0 sm:space-x-4">
+          <span className="text-yellow-400 sm:text-2xl font-mono break-all">
+            CA: {contractAddress}
+          </span>
+          <button
+            onClick={handleCopy}
+            className="bg-yellow-500 text-black px-4 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all"
+          >
+            {copied ? "Copied!" : "Copy"}
+          </button>
         </div>
 
         {/* Social Media Icons */}
