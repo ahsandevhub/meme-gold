@@ -1,8 +1,12 @@
 const About = () => {
   return (
-    <section className="relative py-16 sm:py-[150px] bg-gradient-to-br from-picton-blue to-english-violet text-white">
-      <div id="about" className="absolute -top-16"></div>
-      <div className="max-w-screen-xl mx-auto px-4 text-center">
+    <section className="relative py-16 sm:py-[150px] bg-black text-white">
+      <div id="about" className="absolute -top-12"></div>
+
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0 bg-[url('/pixelated-video-game-treasure.avif')] bg-cover bg-center opacity-10" />
+
+      <div className="relative max-w-screen-lg mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-medium pixel-font text-maize mb-6">
           About MemeGold64
@@ -11,18 +15,21 @@ const About = () => {
         {/* Banner Image */}
         <div className="w-full flex justify-center mb-6">
           <img
-            src="/banner.jpg"
+            src="/banner final.jpg"
             alt="GoldMeme Banner"
-            className="w-full max-w-3xl rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-lg border-2 border-sky-500"
           />
         </div>
 
         {/* About Details */}
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          MemeGold64 is the ultimate meme token inspired by the timeless value
-          of gold and the power of the meme community. 100% Gold Meme, No
-          Utility, No Roadmap, Just Fun! Join us and become part of the golden
-          revolution.
+        <p className="text-gray-300 max-w-3xl mx-auto">
+          Move over, Gold—MemGold64 is here to claim the throne! Meme coins may
+          battle it out with Bitcoin, but there’s never been a meme precious
+          metal to rival gold… until now. MemGold64 is the golden treasure of
+          internet culture, celebrating iconic memes and rewarding those who
+          live for viral moments. It’s not just a coin; it’s digital gold for
+          meme lovers everywhere. Collect the laughs, share the nostalgia, and
+          secure your place in meme history!
         </p>
       </div>
     </section>

@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-6 mb-6">
+        <div id="community" className="flex space-x-6 mb-6">
           <a
             href="https://t.me/memegold64"
             target="_blank"

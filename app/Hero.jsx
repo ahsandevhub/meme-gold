@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-80"></div>
 
-      <div className="max-w-screen-xl mx-auto px-4 flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-between relative z-10">
+      <div className="max-w-screen-xl mx-auto px-4 flex flex-col gap-4 lg:gap-0 lg:flex-row items-center justify-between relative z-10">
         {/* Left Side - Text */}
         <div className="text-center sm:text-start space-y-6 w-full sm:w-1/2">
           <h1 className="text-4xl sm:text-6xl mb-3 font-medium pixel-font text-harvest-gold">
@@ -29,7 +29,8 @@ const Hero = () => {
               Buy Now
             </a>
             <a
-              href="#community"
+              href="https://t.me/memegold64"
+              target="_blank"
               className="border-2 text-sm border-harvest-gold text-harvest-gold py-2 px-4 rounded-md hover:bg-harvest-gold hover:text-black transition duration-300"
             >
               Join Community
@@ -40,11 +41,11 @@ const Hero = () => {
         {/* Right Side - Rotating Coin GIF */}
         <div className="">
           <Image
-            height={800}
-            width={800}
-            src="/goldmeme.gif"
+            height={999}
+            width={999}
+            src="/memegold64logo.png"
             alt="MemeGold64 Coin"
-            className="w-64 h-64 sm:w-96 sm:h-96 object-contain"
+            className="w-72 h-72 sm:w-[500px] sm:h-[500px] object-contain"
           />
         </div>
       </div>

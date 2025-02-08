@@ -38,17 +38,15 @@ const tokenomicsData = [
   },
   {
     icon: <FaGlobe />,
-    text: "Multi-chain - available on Solana",
+    text: "Available on Solana",
     color: "text-yellow-500 border-yellow-500 hover:shadow-yellow-400",
   },
 ];
 
 const Tokenomics = () => {
   return (
-    <section
-      id="tokenomics"
-      className="relative py-16 sm:py-[150px] bg-gradient-to-br from-english-violet to-raw-umber text-black overflow-hidden"
-    >
+    <section className="relative py-16 sm:py-[150px] bg-gradient-to-br from-english-violet to-raw-umber text-black overflow-hidden">
+      <div id="tokenomics" className="absolute -top-12"></div>
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-[url('/treasure.avif')] bg-cover bg-center opacity-10" />
 

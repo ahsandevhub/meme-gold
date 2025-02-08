@@ -9,7 +9,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "" },
     { name: "About", href: "#about" },
-    { name: "How to Buy", href: "#how-to-buy" },
+    { name: "Teams", href: "#teams" },
     { name: "Tokenomics", href: "#tokenomics" },
     { name: "Community", href: "#community" },
   ];
@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky w-full top-0 backdrop-blur-md bg-gradient-to-r from-picton-blue to-harvest-gold text-white z-50">
+    <header className="sticky w-full top-0 backdrop-blur-md bg-gradient-to-r from-raw-umber to-harvest-gold text-white z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center">
         {/* Left - Logo */}
         <a
@@ -37,7 +37,7 @@ const Header = () => {
         </a>
 
         {/* Right - Navbar */}
-        <nav className="hidden sm:flex space-x-8">
+        <nav className="hidden sm:flex space-x-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
