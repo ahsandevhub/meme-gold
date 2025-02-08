@@ -19,10 +19,13 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 sm:opacity-80 backdrop-blur-md bg-gradient-to-r from-picton-blue to-harvest-gold text-white z-50">
+    <header className="sticky w-full top-0 backdrop-blur-md bg-gradient-to-r from-picton-blue to-harvest-gold text-white z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center">
         {/* Left - Logo */}
-        <div className="flex items-center gap-1 text-2xl sm:text-3xl  font-medium pixel-font">
+        <a
+          href="/"
+          className="flex items-center gap-1 text-2xl sm:text-3xl  font-medium pixel-font"
+        >
           <Image
             src={"/goldmeme.gif"}
             height={50}
@@ -31,7 +34,7 @@ const Header = () => {
             className="size-12 sm:size-16"
           />
           <h3>MemeGold</h3>
-        </div>
+        </a>
 
         {/* Right - Navbar */}
         <nav className="hidden text-lg sm:flex space-x-8">

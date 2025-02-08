@@ -3,13 +3,13 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section
-      className="relative md:py-[200px] py-10 text-white bg-cover bg-center"
+      className="relative md:py-[200px] py-12 text-white bg-cover bg-center"
       style={{ backgroundImage: "url('/memegold-bg.jpg')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-80"></div>
 
-      <div className="max-w-screen-xl sm:mt-16 mt-14 mx-auto px-4 flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-between relative z-10">
+      <div className="max-w-screen-xl mx-auto px-4 flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-between relative z-10">
         {/* Left Side - Text */}
         <div className="space-y-6 w-full sm:w-1/2">
           <h1 className="text-6xl sm:text-7xl mb-3 font-medium pixel-font text-harvest-gold">
