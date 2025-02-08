@@ -24,7 +24,7 @@ const Header = () => {
         {/* Left - Logo */}
         <a
           href="/"
-          className="flex items-center gap-1 text-2xl sm:text-3xl  font-medium pixel-font"
+          className="flex items-center gap-1 text-xl sm:text-2xl font-medium"
         >
           <Image
             src={"/goldmeme.gif"}
@@ -33,11 +33,11 @@ const Header = () => {
             alt="logo"
             className="size-12 sm:size-16"
           />
-          <h3>MemeGold</h3>
+          <h3>MemeGold64</h3>
         </a>
 
         {/* Right - Navbar */}
-        <nav className="hidden text-lg sm:flex space-x-8">
+        <nav className="hidden sm:flex space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}

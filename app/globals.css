@@ -1,18 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Silkscreen:wght@400;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Nova Square", serif;
-}
+/* @font-face {
+  font-family: "MyCustomFont";
+  src: url("/fonts/TypefaceMario64.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+} */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Silkscreen", serif;
-}
+/* * {
+  font-family: "MyCustomFont", serif;
+} */

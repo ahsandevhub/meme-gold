@@ -4,7 +4,7 @@ const About = () => {
       <div className="max-w-screen-xl mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-medium pixel-font text-maize mb-6">
-          About MemeGold
+          About MemeGold64
         </h2>
 
         {/* Banner Image */}
@@ -17,10 +17,10 @@ const About = () => {
         </div>
 
         {/* About Details */}
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          MemeGold is the ultimate meme token inspired by the timeless value of
-          gold and the power of the meme community. 100% Gold Meme, No Utility,
-          No Roadmap, Just Fun! Join us and become part of the golden
+        <p className="text-gray-300 max-w-2xl mx-auto">
+          MemeGold64 is the ultimate meme token inspired by the timeless value
+          of gold and the power of the meme community. 100% Gold Meme, No
+          Utility, No Roadmap, Just Fun! Join us and become part of the golden
           revolution.
         </p>
       </div>

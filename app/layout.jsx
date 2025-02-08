@@ -1,17 +1,22 @@
+import localFont from "next/font/local";
 import "./globals.css";
-import { pressStart, quantico, silkscreen } from "./utils/fonts";
+
+const customFont = localFont({
+  src: "../public/fonts/TypefaceMario64.otf",
+  display: "swap",
+});
 
 export const metadata = {
-  title: "MemeGold - The Ultimate Gold Meme Token",
+  title: "MemeGold64 - The Ultimate Gold Meme Token",
   description:
-    "MemeGold (GOLD) is a 100% meme token with no utility, no roadmap, just pure meme fun!",
+    "MemeGold64 (GOLD) is a 100% meme token with no utility, no roadmap, just pure meme fun!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${pressStart.variable} ${silkscreen.variable} ${quantico.variable} min-h-screen flex flex-col antialiased`}
+        className={`${customFont.className} min-h-screen flex flex-col antialiased`}
       >
         {children}
       </body>
