@@ -7,9 +7,9 @@ const customFont = localFont({
 });
 
 export const metadata = {
-  title: "MemeGold64 - The Ultimate Gold Meme Token",
+  title: "MemGold64 - The Ultimate Gold Meme Token",
   description:
-    "MemeGold64 (GOLD) is a 100% meme token with no utility, no roadmap, just pure meme fun!",
+    "MemGold64 (GOLD) is a 100% meme token with no utility, no roadmap, just pure meme fun!",
 };
 
 export default function RootLayout({ children }) {

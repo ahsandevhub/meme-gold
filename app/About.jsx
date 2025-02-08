@@ -9,17 +9,17 @@ const About = () => {
       <div className="relative max-w-screen-lg mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-medium pixel-font text-maize mb-6">
-          About MemeGold64
+          About MemGold64
         </h2>
 
-        {/* Banner Image */}
+        {/* Banner Image
         <div className="w-full flex justify-center mb-6">
           <img
             src="/banner final.jpg"
             alt="GoldMeme Banner"
             className="w-full rounded-lg shadow-lg border-2 border-sky-500"
           />
-        </div>
+        </div> */}
 
         {/* About Details */}
         <p className="text-gray-300 max-w-3xl mx-auto">

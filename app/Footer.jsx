@@ -4,15 +4,15 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
       <div className="max-w-screen-xl mx-auto px-4 flex flex-col items-center">
-        {/* MemeGold64 Logo */}
+        {/* MemGold64 Logo */}
         <div className="text-3xl pixel-font mb-6 text-harvest-gold">
-          MemeGold64
+          MemGold64
         </div>
 
         {/* Social Media Icons */}
         <div id="community" className="flex space-x-6 mb-6">
           <a
-            href="https://t.me/memegold64"
+            href="https://t.me/MemGold64"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-sm text-gray-400 mb-4">
-          Copyright © 2025 MemeGold64. All Rights Reserved.
+          Copyright © 2025 MemGold64. All Rights Reserved.
         </div>
 
         {/* Developed By Ahsan DevHub */}

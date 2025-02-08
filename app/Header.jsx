@@ -33,7 +33,7 @@ const Header = () => {
             alt="logo"
             className="size-12 sm:size-16"
           />
-          <h3>MemeGold64</h3>
+          <h3>MemGold64</h3>
         </a>
 
         {/* Right - Navbar */}

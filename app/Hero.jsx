@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Left Side - Text */}
         <div className="text-center sm:text-start space-y-6 w-full sm:w-1/2">
           <h1 className="text-4xl sm:text-6xl mb-3 font-medium pixel-font text-harvest-gold">
-            MemeGold64
+            MemGold64
           </h1>
           <h2 className="text-xl sm:text-4xl">The Ultimate Gold Meme Token</h2>
           <p className="text-lg text-maize">
@@ -29,7 +29,7 @@ const Hero = () => {
               Buy Now
             </a>
             <a
-              href="https://t.me/memegold64"
+              href="https://t.me/MemGold64"
               target="_blank"
               className="border-2 text-sm border-harvest-gold text-harvest-gold py-2 px-4 rounded-md hover:bg-harvest-gold hover:text-black transition duration-300"
             >
@@ -43,8 +43,8 @@ const Hero = () => {
           <Image
             height={999}
             width={999}
-            src="/memegold64logo.png"
-            alt="MemeGold64 Coin"
+            src="/MemeGold64logo.png"
+            alt="MemGold64 Coin"
             className="w-72 h-72 sm:w-[500px] sm:h-[500px] object-contain"
           />
         </div>
