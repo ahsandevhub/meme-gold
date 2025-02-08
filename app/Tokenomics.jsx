@@ -45,10 +45,10 @@ const tokenomicsData = [
 
 const Tokenomics = () => {
   return (
-    <section className="relative py-16 sm:py-[150px] bg-gradient-to-br from-english-violet to-raw-umber text-black overflow-hidden">
+    <section className="relative  py-16 sm:py-[150px] bg-black text-black overflow-hidden">
       <div id="tokenomics" className="absolute -top-12"></div>
       {/* Background Image Overlay */}
-      <div className="absolute inset-0 bg-[url('/treasure.avif')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('/treasure.avif')] bg-cover bg-center opacity-30" />
 
       {/* Content Container */}
       <div className="relative max-w-3xl mx-auto text-center px-6">

@@ -12,8 +12,11 @@ const HomePage = () => {
       <BackgroundMusic />
       <Header />
       <Hero />
+      <hr className="border-yellow-800" />
       <About />
+      <hr className="border-yellow-800" />
       <Teams />
+      <hr className="border-yellow-800" />
       <Tokenomics />
       <Footer />
     </>

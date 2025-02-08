@@ -32,7 +32,12 @@ const teamMembers = [
 
 const Teams = () => {
   return (
-    <section id="team" className="py-16 sm:py-[150px] bg-black text-white">
+    <section
+      id="teams"
+      className="relative py-16 sm:py-[150px] bg-black text-white"
+    >
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0 bg-[url('/golden-coins.webp')] bg-cover bg-center opacity-10" />
       <div className="max-w-4xl mx-auto text-center px-6">
         {/* Banner Image */}
         <div className="w-full flex justify-center mb-6">
