@@ -104,14 +104,14 @@ const Teams = () => {
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center text-center space-y-4 bg-white/10 p-6 rounded-lg border backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="flex flex-col items-center text-center sm:space-y-4 space-y-2 bg-white/10 sm:p-6 p-4 rounded-lg border backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               {/* Profile Image with Ring Border */}
               <div
-                className={`relative w-32 h-32 rounded-full overflow-hidden border-4 ${member.color}`}
+                className={`relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 ${member.color}`}
               >
                 <Image
                   src={member.image}
@@ -122,7 +122,7 @@ const Teams = () => {
               </div>
 
               {/* Name & Role */}
-              <div className="space-y-3">
+              <div className="sm:space-y-3 space-y-2">
                 <h3 className="text-lg">{member.name}</h3>
                 <p className="text-xs text-gray-300">{member.role}</p>
               </div>
