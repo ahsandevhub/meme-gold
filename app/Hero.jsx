@@ -43,7 +43,7 @@ const Hero = () => {
           <Image
             height={999}
             width={999}
-            src="/memeGold64logo.png"
+            src="/memegold64logo.png"
             alt="MemGold64 Coin"
             className="w-72 h-72 sm:w-[500px] sm:h-[500px] object-contain"
           />
