@@ -11,7 +11,7 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Teams", href: "#teams" },
     { name: "Tokenomics", href: "#tokenomics" },
-    { name: "Community", href: "#community" },
+    { name: "Community", href: "https://t.me/MemGold64" },
   ];
 
   const handleLinkClick = () => {

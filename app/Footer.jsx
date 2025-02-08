@@ -50,6 +50,19 @@ const Footer = () => {
               className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
             />
           </a>
+          <a
+            href="https://www.tiktok.com/@memgold64?_t=ZS-8tkpqlugkER&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              height={50}
+              width={50}
+              src="/tiktok.png"
+              alt="tiktok logo"
+              className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
+            />
+          </a>
         </div>
 
         {/* Copyright */}

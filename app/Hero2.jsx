@@ -36,9 +36,10 @@ const Hero2 = () => {
       className="relative py-12 text-white bg-cover bg-center"
       style={{ backgroundImage: "url('/background.jpg')" }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      {/* Overlay (Fixed - pointer-events-none) */}
+      <div className="absolute inset-0 bg-black bg-opacity-80 pointer-events-none"></div>
 
+      {/* Content (Fixed - relative) */}
       <div className="relative max-w-4xl mx-auto text-center px-6">
         {/* Banner Image */}
         <div className="w-full flex justify-center mb-6">
@@ -51,45 +52,43 @@ const Hero2 = () => {
 
         {/* Social Media Icons */}
         <div id="community" className="flex justify-center space-x-6 mb-6">
-          <a
-            href="https://t.me/MemGold64"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              height={50}
-              width={50}
-              src="/telegram.png"
-              alt="telegram logo"
-              className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
-            />
-          </a>
-          <a
-            href="https://x.com/MemGold64"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              height={50}
-              width={50}
-              src="/twitter.png"
-              alt="twitter logo"
-              className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
-            />
-          </a>
-          <a
-            href="https://dexscreener.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              height={50}
-              width={50}
-              src="/dex-screener-logo.png"
-              alt="dex logo"
-              className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
-            />
-          </a>
+          {[
+            {
+              href: "https://t.me/MemGold64",
+              img: "/telegram.png",
+              alt: "Telegram",
+            },
+            {
+              href: "https://x.com/MemGold64",
+              img: "/twitter.png",
+              alt: "Twitter",
+            },
+            {
+              href: "https://dexscreener.com",
+              img: "/dex-screener-logo.png",
+              alt: "Dex Screener",
+            },
+            {
+              href: "https://www.tiktok.com/@memgold64?_t=ZS-8tkpqlugkER&_r=1",
+              img: "/tiktok.png",
+              alt: "TikTok",
+            },
+          ].map((social, index) => (
+            <a
+              key={index}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                height={50}
+                width={50}
+                src={social.img}
+                alt={social.alt}
+                className="size-10 inline-block bg-white rounded-lg border border-transparent hover:border-yellow-500 hover:outline hover:outline-yellow-500 hover:scale-110 transition-all duration-300"
+              />
+            </a>
+          ))}
         </div>
 
         <motion.h2
@@ -100,6 +99,7 @@ const Hero2 = () => {
         >
           MemGold64 Corporate Team
         </motion.h2>
+
         {/* Team Members Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
@@ -132,8 +132,8 @@ const Hero2 = () => {
         </div>
       </div>
 
-      {/* Pixelated Background Effect */}
-      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center pixel-bg"></div>
+      {/* Pixelated Background Effect (Fixed - pointer-events-none) */}
+      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center pixel-bg pointer-events-none"></div>
     </section>
   );
 };
