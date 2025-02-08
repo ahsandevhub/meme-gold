@@ -32,11 +32,11 @@ const About = () => {
           secure your place in meme history!
         </p>
 
-        <div className="max-w-3xl mx-auto flex justify-center sm:mt-12 mt-10">
+        <div className="max-w-3xl mx-auto flex justify-center sm:border-4 border-2 border-yellow-500 rounded-lg bg-slate-800 sm:p-2 p-1 sm:mt-12 mt-10">
           <img
             src="/tweet.jpg"
             alt="GoldMeme Banner"
-            className="w-full rounded-lg shadow-lg border-2 border-sky-500"
+            className="w-full rounded-lg shadow-lg"
           />
         </div>
       </div>
