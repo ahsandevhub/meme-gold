@@ -92,11 +92,15 @@ const Hero2 = () => {
         </div>
 
         <motion.h2
-          className="text-2xl sm:text-4xl text-yellow-500 font-medium mb-10 uppercase"
+          className="relative text-2xl sm:text-4xl text-yellow-500 font-medium mb-10 uppercase"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <div
+            id="teams"
+            className="absolute sm:-top-[100px] -top-[85px]"
+          ></div>
           MemGold64 Corporate Team
         </motion.h2>
 
