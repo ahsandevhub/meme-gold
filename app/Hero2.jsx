@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-const contractAddress = "contract address here...";
+const contractAddress = "8vTeqSjbuidwD5wTTYf3eKgYUDfPLSfD23AVDcSgmoon";
 
 const teamMembers = [
   {
@@ -88,7 +88,7 @@ const Hero2 = () => {
               alt: "Twitter",
             },
             {
-              href: "https://dexscreener.com",
+              href: "https://dexscreener.com/solana/8vteqsjbuidwd5wttyf3ekgyudfplsfd23avdcsgmoon",
               img: "/dex-screener-logo.png",
               alt: "Dex Screener",
             },

@@ -38,7 +38,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://dexscreener.com"
+            href="https://dexscreener.com/solana/8vteqsjbuidwd5wttyf3ekgyudfplsfd23avdcsgmoon"
             target="_blank"
             rel="noopener noreferrer"
           >
