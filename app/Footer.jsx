@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex space-x-6 mb-6">
           <a
-            href="https://twitter.com"
+            href="https://t.me/memegold64"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +25,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://telegram.org"
+            href="https://x.com/MemGold64"
             target="_blank"
             rel="noopener noreferrer"
           >
