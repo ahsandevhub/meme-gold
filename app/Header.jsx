@@ -24,14 +24,14 @@ const Header = () => {
         {/* Left - Logo */}
         <a
           href="/"
-          className="flex items-center gap-1 text-xl sm:text-2xl font-medium"
+          className="flex items-center gap-2 text-xl sm:text-2xl font-medium"
         >
           <motion.img
             src="/memgold64-logo.png"
             height={50}
             width={50}
             alt="logo"
-            className="size-12 sm:size-16"
+            className="size-10 sm:size-14"
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
           />
