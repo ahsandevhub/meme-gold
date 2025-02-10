@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Header = () => {
@@ -19,19 +19,21 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky w-full top-0 backdrop-blur-md bg-gradient-to-r from-raw-umber to-harvest-gold text-white z-50">
+    <header className="sticky w-full top-0 backdrop-blur-md bg-gradient-to-r from-sky-500 to-harvest-gold text-white z-50">
       <div className="max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center">
         {/* Left - Logo */}
         <a
           href="/"
           className="flex items-center gap-1 text-xl sm:text-2xl font-medium"
         >
-          <Image
-            src={"/goldmeme.gif"}
+          <motion.img
+            src="/memgold64-logo.png"
             height={50}
             width={50}
             alt="logo"
             className="size-12 sm:size-16"
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
           />
           <h3>MemGold64</h3>
         </a>
